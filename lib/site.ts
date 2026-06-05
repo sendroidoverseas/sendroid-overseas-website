@@ -6,7 +6,9 @@ export const siteConfig = {
   email: "sales@sendroidoverseas.com",
   phone: "+91 62635 35757",
   whatsapp: "916263535757",
-  address: "India",
+  address: "D-43, Navlakha Complex, Sapna Sangeeta Road, Indore, Madhya Pradesh – 452001, India",
+  city: "Indore, Madhya Pradesh, India",
+  director: "Anjan Shrivastava",
   hours: "Monday to Saturday, 9:30 AM - 6:30 PM IST"
 };
 

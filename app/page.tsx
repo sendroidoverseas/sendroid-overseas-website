@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Award, Building2, Globe2, Handshake, ShieldCheck, Ship } from "lucide-react";
+import { Award, Building2, FileCheck, Globe2, Handshake, ShieldCheck, Ship } from "lucide-react";
 import { FAQ } from "@/components/faq";
 import { Hero } from "@/components/hero";
 import { InquiryForm } from "@/components/inquiry-form";
@@ -60,7 +60,8 @@ export default function Home() {
               { icon: Handshake, title: "Buyer-seller alignment", copy: "Clear communication between requirements, specifications and supplier capability." },
               { icon: Globe2, title: "International mindset", copy: "Content, process and follow-up designed around global B2B expectations." },
               { icon: Award, title: "Quality orientation", copy: "A practical focus on product suitability, consistency and category fit." },
-              { icon: Building2, title: "Professional presence", copy: "A serious trade partner for long-term sourcing relationships." }
+              { icon: FileCheck, title: "IEC Registered", copy: "Officially registered under India's Importer-Exporter Code — a government-issued export credential." },
+              { icon: Building2, title: "Professional presence", copy: "A serious trade partner for long-term sourcing relationships based in Indore, India." }
             ].map((item) => (
               <div key={item.title} className="rounded-lg border border-[#dce3ec] bg-white p-6">
                 <item.icon className="text-[#b9964a]" size={26} />

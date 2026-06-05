@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { FileCheck, Mail, MapPin, Phone, User } from "lucide-react";
 import { navItems, siteConfig } from "@/lib/site";
 import { NewsletterForm } from "@/components/newsletter-form";
 
@@ -40,7 +40,13 @@ export function Footer() {
               <Phone size={17} /> {siteConfig.phone}
             </span>
             <span className="flex items-center gap-3">
-              <MapPin size={17} /> {siteConfig.address}
+              <MapPin size={17} /> {siteConfig.city}
+            </span>
+            <span className="flex items-center gap-3">
+              <User size={17} /> {siteConfig.director} — Director
+            </span>
+            <span className="flex items-center gap-3">
+              <FileCheck size={17} /> IEC Registered Export Company
             </span>
           </div>
           <NewsletterForm />

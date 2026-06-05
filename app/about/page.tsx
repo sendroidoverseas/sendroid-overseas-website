@@ -38,7 +38,8 @@ export default function AboutPage() {
               and build trade relationships that can grow over time. Every inquiry deserves structure, clarity and
               accountable follow-up.&rdquo;
             </p>
-            <p className="mt-5 text-sm font-bold text-[#071b33]">Founder, Sendroid Overseas Private Limited</p>
+            <p className="mt-5 text-sm font-bold text-[#071b33]">Anjan Shrivastava</p>
+            <p className="text-sm text-[#526176]">Director, Sendroid Overseas Private Limited</p>
           </div>
         </div>
       </section>
