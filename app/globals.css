@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #122033;
+  --navy: #071b33;
+  --navy-soft: #0d2b4c;
+  --gold: #b9964a;
+  --gold-soft: #e7d5a6;
+  --mist: #f5f7fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.font-display {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+.container-pad {
+  padding-left: clamp(1rem, 4vw, 3rem);
+  padding-right: clamp(1rem, 4vw, 3rem);
+}
+
+.section-pad {
+  padding-top: clamp(4rem, 8vw, 7rem);
+  padding-bottom: clamp(4rem, 8vw, 7rem);
+}
+
+.gold-line {
+  position: relative;
+}
+
+.gold-line::before {
+  background: var(--gold);
+  content: "";
+  display: block;
+  height: 2px;
+  margin-bottom: 1rem;
+  width: 3rem;
+}
+
+.premium-shadow {
+  box-shadow: 0 20px 60px rgba(7, 27, 51, 0.1);
+}
+
+.field {
+  border: 1px solid #d5dce6;
+  border-radius: 0.5rem;
+  min-height: 3rem;
+  outline: none;
+  padding: 0.8rem 0.9rem;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+  width: 100%;
+}
+
+.field:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 4px rgba(185, 150, 74, 0.14);
+}
+
+.animate-rise {
+  animation: rise 700ms ease both;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+  }
+}
