@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FileCheck, Mail, MapPin, Phone, User } from "lucide-react";
+import { BadgeCheck, FileCheck, Mail, MapPin, Phone, User } from "lucide-react";
 import { navItems, siteConfig } from "@/lib/site";
 import { NewsletterForm } from "@/components/newsletter-form";
 
@@ -47,6 +47,9 @@ export function Footer() {
             </span>
             <span className="flex items-center gap-3">
               <FileCheck size={17} /> IEC Registered Export Company
+            </span>
+            <span className="flex items-center gap-3">
+              <BadgeCheck size={17} /> ISO 9001:2015 Certified
             </span>
           </div>
           <NewsletterForm />
